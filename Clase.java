@@ -1,5 +1,5 @@
  abstract class Clase{
-	private int nivel;
+	private int nivel = 1;
 	private int vida;
 	private int ataque;
 	private int defensa;
@@ -9,62 +9,77 @@
 	private String rol;
 	private String nombreClase;
 
-	public void getNivel(){
+	public int getNivel(){
 		return nivel;
 	}
-	public int setNivel(){
+	public void setNivel(int nivelVal){
+		this.nivel = nivelVal;
 	}
 
-	 public void getVida(){
-	}
-	public int setVida(){
+	public int getVida(){
 		return vida;
 	}
-
-	 public void getAtaque(){
+	public void setVida(int vidaVal){
+		this.vida = vidaVal;
 	}
-	public int setAtaque(){
+
+	public int getAtaque(){
 		return ataque;
 	}
-
-	 public void getDefensa(){
+	public void setAtaque(int ataqueVal){
+		this.ataque = ataqueVal;
 	}
-	public int setDefensa(){
+
+	public int getDefensa(){
 		return defensa;
 	}
-
-	 public void getSuerte(){
+	public void setDefensa(int defensaVal){
+		this.defensa = defensaVal;
 	}
-	public int setSuerte(){
+
+	public int getSuerte(){
 		return suerte;
 	}
-
-	 public void getCeleridad(){
+	public void setSuerte(int suerteVal){
+		this.suerte = suerteVal;
 	}
-	public int setCeleridad(){
+
+	public int getCeleridad(){
 		return celeridad;
 	}
-
-	 public void getIntelecto(){
+	public void setCeleridad(int celeridadVal){
+		this.celeridad = celeridadVal;
 	}
-	public int setIntelecto(){
+
+	public int getIntelecto(){
 		return intelecto;
 	}
-
-	 public void getRol(){
+	public void setIntelecto(int intelectoVal){
+		this.intelecto = intelectoVal;
 	}
-	public String setRol(){
+
+	public String getRol(){
 		return rol;
 	}
-
-	 public void getNombreClase(){
+	public void setRol(String rolVal){
+		this.rol = rolVal;
 	}
-	public String setNombreClase(){
+
+	public String getNombreClase(){
 		return nombreClase;
+	}
+	public void setNombreClase(String nombreClaseVal){
+		this.nombreClase = nombreClaseVal;
 	}
 
 	public void Guerrero(){
-		
+		/*setVida(100);
+		setAtaque(25);
+		setDefensa(30);
+		setSuerte(15);
+		setCeleridad(35);
+		setIntelecto(20);
+		setNombreClase("Guerrero");*/
 	}
 }
 
